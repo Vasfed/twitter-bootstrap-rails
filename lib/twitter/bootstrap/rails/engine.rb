@@ -19,7 +19,7 @@ module Twitter
           end
 
         initializer 'twitter-bootstrap-rails.setup_helpers' do |app|
-          app.config.to_prepare do
+          ActiveSupport.on_load(:action_controller) do
             ActionController::Base.send :include, Breadcrumbs
             ActionController::Base.send :helper, FlashBlockHelper
             ActionController::Base.send :helper, BootstrapFlashHelper
