@@ -26,13 +26,4 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'therubyracer'
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'rake'
-  s.post_install_message = "Important: You may need to add a javascript runtime to your Gemfile in order for bootstrap's LESS files to compile to CSS. \n\n" \
-  "**********************************************\n\n" \
-  "ExecJS supports these runtimes:\n\n" \
-  "therubyracer - Google V8 embedded within Ruby\n\n" \
-  "therubyrhino - Mozilla Rhino embedded within JRuby\n\n" \
-  "Node.js\n\n" \
-  "Apple JavaScriptCore - Included with Mac OS X\n\n" \
-  "Microsoft Windows Script Host (JScript)\n\n" \
-  "**********************************************\n"
 end
